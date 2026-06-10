@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run CTurtle",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/bin/zsh",
+            "args": [
+                "-lc",
+                "open -a XQuartz >/dev/null 2>&1; sleep 2; export DISPLAY=\"${DISPLAY:-$(launchctl getenv DISPLAY)}\"; export DISPLAY=\"${DISPLAY:-:0}\"; exec \"${workspaceFolder}/ClackJack\""
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build CTurtle",
+            "MIMode": "lldb"
+        }
+    ]
+}

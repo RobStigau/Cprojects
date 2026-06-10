@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CTurtle",
+            "type": "shell",
+            "command": "clang++ \"${workspaceFolder}/ClackJack.cpp\" -std=c++17 -I\"${workspaceFolder}/C-Turtle\" -I/opt/X11/include -L/opt/X11/lib -lX11 -o \"${workspaceFolder}/ClackJack\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

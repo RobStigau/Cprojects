@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SFML Blackjack",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "ClackJack.cpp",
+                "-std=c++17",
+                "-I/opt/homebrew/Cellar/sfml/3.0.2/include",
+                "-L/opt/homebrew/Cellar/sfml/3.0.2/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-o",
+                "blackjack"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+       
+    ]
+}

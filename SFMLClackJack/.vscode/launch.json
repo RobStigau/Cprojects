@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Blackjack",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/blackjack",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Build SFML Blackjack",
+      "MIMode": "lldb"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/roberttigau/VSCODE_GIT_REPOSITORIES/Cprojects/ClackJack'
+relocations:     []
+...
